@@ -51,6 +51,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B11D82F22C24A19D004D1E49 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B15A23492C218C5500FCE304 /* EarthQuakeInfoVC.swift */,
+				B15A234C2C218E3400FCE304 /* MapVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B11D82F32C24A1C0004D1E49 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B15A23322C21876E00FCE304 /* AppDelegate.swift */,
+				B15A23342C21876E00FCE304 /* SceneDelegate.swift */,
+				B15A233B2C21876E00FCE304 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		B15A23262C21876E00FCE304 = {
 			isa = PBXGroup;
 			children = (
@@ -70,16 +89,13 @@
 		B15A23312C21876E00FCE304 /* EarthQuakeApp_Ijaza */ = {
 			isa = PBXGroup;
 			children = (
+				B11D82F32C24A1C0004D1E49 /* Resources */,
+				B11D82F22C24A19D004D1E49 /* Controllers */,
 				B15A234F2C21BC7800FCE304 /* Model */,
 				B1F015232C2203E80023E004 /* Views */,
 				B15A23542C21BEBC00FCE304 /* ViewModel */,
 				B15A23582C21C62C00FCE304 /* Utils */,
-				B15A23322C21876E00FCE304 /* AppDelegate.swift */,
-				B15A23342C21876E00FCE304 /* SceneDelegate.swift */,
-				B15A233B2C21876E00FCE304 /* Assets.xcassets */,
 				B15A23402C21876E00FCE304 /* Info.plist */,
-				B15A23492C218C5500FCE304 /* EarthQuakeInfoVC.swift */,
-				B15A234C2C218E3400FCE304 /* MapVC.swift */,
 			);
 			path = EarthQuakeApp_Ijaza;
 			sourceTree = "<group>";
