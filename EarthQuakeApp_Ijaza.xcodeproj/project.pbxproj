@@ -3,35 +3,38 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B10ACD8D2C22A61200672DC9 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B10ACD8C2C22A61200672DC9 /* RxSwift */; };
+		B10ACD8F2C22A61200672DC9 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = B10ACD8E2C22A61200672DC9 /* RxCocoa */; };
+		B10ACD912C22A61200672DC9 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = B10ACD902C22A61200672DC9 /* RxRelay */; };
+		B10ACD942C22ABE300672DC9 /* EarthquakeInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10ACD932C22ABE300672DC9 /* EarthquakeInfoView.swift */; };
 		B15A23332C21876E00FCE304 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15A23322C21876E00FCE304 /* AppDelegate.swift */; };
 		B15A23352C21876E00FCE304 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15A23342C21876E00FCE304 /* SceneDelegate.swift */; };
-		B15A23372C21876E00FCE304 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15A23362C21876E00FCE304 /* ViewController.swift */; };
 		B15A233C2C21876E00FCE304 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15A233B2C21876E00FCE304 /* Assets.xcassets */; };
-		B15A233F2C21876E00FCE304 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15A233D2C21876E00FCE304 /* LaunchScreen.storyboard */; };
 		B15A234A2C218C5500FCE304 /* EarthQuakeInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15A23492C218C5500FCE304 /* EarthQuakeInfoVC.swift */; };
 		B15A234D2C218E3400FCE304 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15A234C2C218E3400FCE304 /* MapVC.swift */; };
 		B15A23512C21BC9B00FCE304 /* EarthquakeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15A23502C21BC9B00FCE304 /* EarthquakeModel.swift */; };
 		B15A23562C21BF0F00FCE304 /* EarthquakeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15A23552C21BF0F00FCE304 /* EarthquakeViewModel.swift */; };
 		B15A235A2C21C64500FCE304 /* EQError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15A23592C21C64500FCE304 /* EQError.swift */; };
+		B1F015292C2205420023E004 /* EarthquakeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F015282C2205420023E004 /* EarthquakeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B10ACD932C22ABE300672DC9 /* EarthquakeInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeInfoView.swift; sourceTree = "<group>"; };
 		B15A232F2C21876E00FCE304 /* EarthQuakeApp_Ijaza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthQuakeApp_Ijaza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B15A23322C21876E00FCE304 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B15A23342C21876E00FCE304 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B15A23362C21876E00FCE304 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B15A233B2C21876E00FCE304 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B15A233E2C21876E00FCE304 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B15A23402C21876E00FCE304 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B15A23492C218C5500FCE304 /* EarthQuakeInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthQuakeInfoVC.swift; sourceTree = "<group>"; };
 		B15A234C2C218E3400FCE304 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		B15A23502C21BC9B00FCE304 /* EarthquakeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeModel.swift; sourceTree = "<group>"; };
 		B15A23552C21BF0F00FCE304 /* EarthquakeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeViewModel.swift; sourceTree = "<group>"; };
 		B15A23592C21C64500FCE304 /* EQError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EQError.swift; sourceTree = "<group>"; };
+		B1F015282C2205420023E004 /* EarthquakeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +42,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B10ACD912C22A61200672DC9 /* RxRelay in Frameworks */,
+				B10ACD8F2C22A61200672DC9 /* RxCocoa in Frameworks */,
+				B10ACD8D2C22A61200672DC9 /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,14 +70,13 @@
 		B15A23312C21876E00FCE304 /* EarthQuakeApp_Ijaza */ = {
 			isa = PBXGroup;
 			children = (
-				B15A23582C21C62C00FCE304 /* Utils */,
-				B15A23542C21BEBC00FCE304 /* ViewModel */,
 				B15A234F2C21BC7800FCE304 /* Model */,
+				B1F015232C2203E80023E004 /* Views */,
+				B15A23542C21BEBC00FCE304 /* ViewModel */,
+				B15A23582C21C62C00FCE304 /* Utils */,
 				B15A23322C21876E00FCE304 /* AppDelegate.swift */,
 				B15A23342C21876E00FCE304 /* SceneDelegate.swift */,
-				B15A23362C21876E00FCE304 /* ViewController.swift */,
 				B15A233B2C21876E00FCE304 /* Assets.xcassets */,
-				B15A233D2C21876E00FCE304 /* LaunchScreen.storyboard */,
 				B15A23402C21876E00FCE304 /* Info.plist */,
 				B15A23492C218C5500FCE304 /* EarthQuakeInfoVC.swift */,
 				B15A234C2C218E3400FCE304 /* MapVC.swift */,
@@ -103,6 +108,23 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		B1F015232C2203E80023E004 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B1F015272C22050F0023E004 /* Cells */,
+				B10ACD932C22ABE300672DC9 /* EarthquakeInfoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B1F015272C22050F0023E004 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B1F015282C2205420023E004 /* EarthquakeCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,6 +141,11 @@
 			dependencies = (
 			);
 			name = EarthQuakeApp_Ijaza;
+			packageProductDependencies = (
+				B10ACD8C2C22A61200672DC9 /* RxSwift */,
+				B10ACD8E2C22A61200672DC9 /* RxCocoa */,
+				B10ACD902C22A61200672DC9 /* RxRelay */,
+			);
 			productName = EarthQuakeApp_Ijaza;
 			productReference = B15A232F2C21876E00FCE304 /* EarthQuakeApp_Ijaza.app */;
 			productType = "com.apple.product-type.application";
@@ -146,6 +173,9 @@
 				Base,
 			);
 			mainGroup = B15A23262C21876E00FCE304;
+			packageReferences = (
+				B10ACD8B2C22A61200672DC9 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = B15A23302C21876E00FCE304 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -160,7 +190,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B15A233F2C21876E00FCE304 /* LaunchScreen.storyboard in Resources */,
 				B15A233C2C21876E00FCE304 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,27 +203,17 @@
 			files = (
 				B15A235A2C21C64500FCE304 /* EQError.swift in Sources */,
 				B15A234D2C218E3400FCE304 /* MapVC.swift in Sources */,
-				B15A23372C21876E00FCE304 /* ViewController.swift in Sources */,
 				B15A23512C21BC9B00FCE304 /* EarthquakeModel.swift in Sources */,
 				B15A23562C21BF0F00FCE304 /* EarthquakeViewModel.swift in Sources */,
 				B15A234A2C218C5500FCE304 /* EarthQuakeInfoVC.swift in Sources */,
+				B10ACD942C22ABE300672DC9 /* EarthquakeInfoView.swift in Sources */,
 				B15A23332C21876E00FCE304 /* AppDelegate.swift in Sources */,
 				B15A23352C21876E00FCE304 /* SceneDelegate.swift in Sources */,
+				B1F015292C2205420023E004 /* EarthquakeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		B15A233D2C21876E00FCE304 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B15A233E2C21876E00FCE304 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B15A23412C21876E00FCE304 /* Debug */ = {
@@ -371,6 +390,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B10ACD8B2C22A61200672DC9 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B10ACD8C2C22A61200672DC9 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B10ACD8B2C22A61200672DC9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		B10ACD8E2C22A61200672DC9 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B10ACD8B2C22A61200672DC9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		B10ACD902C22A61200672DC9 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B10ACD8B2C22A61200672DC9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B15A23272C21876E00FCE304 /* Project object */;
 }

@@ -6,40 +6,53 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
 class EarthquakeViewModel {
+    
     let endPoint  = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson"
 
-    func getEarthquakeInfo(completed: @escaping(Result<[Earthquake], EQError>) -> Void) {
-        guard let url = URL(string: endPoint) else {
-            completed(.failure(.invalidResponse))
-            return
+    func getEarthquakeInfo() -> Observable<[Earthquake]> {
+        return Observable.create { observer in
+            guard let url = URL(string: self.endPoint) else {
+                observer.onError(EQError.invalidResponse)
+                return Disposables.create()
+            }
+            
+            let task = URLSession.shared.dataTask(with: url) { data, response, error in
+                if let _ = error {
+                    observer.onError(EQError.unableToComplete)
+                    return
+                }
+                
+                guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+                    observer.onError(EQError.invalidResponse)
+                    return
+                }
+                
+                guard let data = data else {
+                    observer.onError(EQError.invalidData)
+                    return
+                }
+                
+                do {
+                    let decoder = JSONDecoder()
+                    let earthquakeResponse = try decoder.decode(EarthquakeResponse.self, from: data)
+                    let earthquakes = earthquakeResponse.features.map { feature in
+                        Earthquake(from: feature)
+                    }
+                    observer.onNext(earthquakes)
+                    observer.onCompleted()
+                } catch {
+                    observer.onError(EQError.invalidData)
+                }
+            }
+            task.resume()
+            
+            return Disposables.create {
+                task.cancel()
+            }
         }
-        
-        let task = URLSession.shared.dataTask(with: url) { data, response, error in
-            if let _ = error {
-                completed(.failure(.unableToComplete))
-                return
-            }
-            
-            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
-                completed(.failure(.invalidResponse))
-                return
-            }
-            
-            guard let data = data else {
-                completed(.failure(.invalidData))
-                return
-            }
-            
-            do {
-                let decoder = JSONDecoder()
-                let earthquakeInfo = try decoder.decode([Earthquake].self, from: data)
-                completed(.success(earthquakeInfo))
-            } catch {
-                completed(.failure(.invalidData))
-            }
-        }
-        task.resume()
     }
 }
