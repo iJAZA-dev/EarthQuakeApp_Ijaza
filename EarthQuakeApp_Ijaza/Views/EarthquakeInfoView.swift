@@ -78,6 +78,22 @@ class EarthquakeInfoView: UIView {
         
         
         NSLayoutConstraint.activate([
+            // Magnitude Label
+            magnitudeLabel.topAnchor.constraint(equalTo: topAnchor, constant: 8),
+            magnitudeLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+            magnitudeLabel.trailingAnchor.constraint(equalTo: separatorView.leadingAnchor, constant: -16),
+            
+            // Place Label
+            placeLabel.topAnchor.constraint(equalTo: magnitudeLabel.bottomAnchor, constant: 4),
+            placeLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+            placeLabel.trailingAnchor.constraint(equalTo: separatorView.leadingAnchor, constant: -16),
+            
+            // Depth Label
+            depthLabel.topAnchor.constraint(equalTo: placeLabel.bottomAnchor, constant: 4),
+            depthLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+            depthLabel.trailingAnchor.constraint(equalTo: separatorView.leadingAnchor, constant: -16),
+            depthLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -8),
+            
             // Separator View
             separatorView.topAnchor.constraint(equalTo: topAnchor, constant: 8),
             separatorView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 240),
@@ -94,23 +110,8 @@ class EarthquakeInfoView: UIView {
             numberLabel.leadingAnchor.constraint(equalTo: separatorView.trailingAnchor, constant: 12),
             numberLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
             numberLabel.widthAnchor.constraint(equalToConstant: 50),
-            numberLabel.heightAnchor.constraint(equalToConstant: 30),
+            numberLabel.heightAnchor.constraint(equalToConstant: 30)
             
-            // Magnitude Label
-            magnitudeLabel.topAnchor.constraint(equalTo: topAnchor, constant: 8),
-            magnitudeLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
-            magnitudeLabel.trailingAnchor.constraint(equalTo: separatorView.leadingAnchor, constant: -16),
-            
-            // Place Label
-            placeLabel.topAnchor.constraint(equalTo: magnitudeLabel.bottomAnchor, constant: 4),
-            placeLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
-            placeLabel.trailingAnchor.constraint(equalTo: separatorView.leadingAnchor, constant: -16),
-            
-            // Depth Label
-            depthLabel.topAnchor.constraint(equalTo: placeLabel.bottomAnchor, constant: 4),
-            depthLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
-            depthLabel.trailingAnchor.constraint(equalTo: separatorView.leadingAnchor, constant: -16),
-            depthLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -8)
         ])
     }
 
