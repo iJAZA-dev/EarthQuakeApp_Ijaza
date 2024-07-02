@@ -35,6 +35,9 @@ struct Earthquake {
     let depth: Double
     let number: String
     let url: String
+    let latitude: Double
+    let longitude: Double
+    
 }
 
 extension Earthquake {
@@ -45,6 +48,8 @@ extension Earthquake {
         self.number = feature.properties.code
         self.depth = feature.geometry.coordinates[2]
         self.url = feature.properties.url
+        self.latitude = feature.geometry.coordinates[1]
+        self.longitude = feature.geometry.coordinates[0]
     }
 }
 

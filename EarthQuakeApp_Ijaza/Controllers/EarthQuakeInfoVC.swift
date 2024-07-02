@@ -51,7 +51,7 @@ class EarthQuakeInfoVC: UIViewController {
 
                 // Configure cell appearance
                 if index % 2 == 0 {
-                    cell.contentView.backgroundColor = .systemGray6 // Light color
+                    cell.contentView.backgroundColor = .systemGray6
                     cell.contentView.layer.shadowColor = UIColor.black.cgColor
                     cell.contentView.layer.shadowOffset = CGSize(width: 0, height: 1.0)
                     cell.contentView.layer.shadowOpacity = 0.4
@@ -59,7 +59,7 @@ class EarthQuakeInfoVC: UIViewController {
                     cell.contentView.layer.masksToBounds = false
                     cell.contentView.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
                 } else {
-                    cell.contentView.backgroundColor = .white // Darker color or default
+                    cell.contentView.backgroundColor = .white 
                 }
             }
             .disposed(by: disposeBag)

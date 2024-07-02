@@ -11,7 +11,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
     
         guard let windowScene = (scene as? UIWindowScene) else { return }
@@ -33,6 +32,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func createMapNC() -> UINavigationController {
         let mapVC = MapVC()
+        let earthquakeViewModel = EarthquakeViewModel()
+        mapVC.viewModel = earthquakeViewModel
         mapVC.title = "View On Map"
         mapVC.tabBarItem = UITabBarItem(title: "Map", image: UIImage(named: "map"), tag: 1)
         
@@ -47,10 +48,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         return tabBar
     }
     
-    
     func configureNavigationBar() {
         UINavigationBar.appearance().tintColor = .systemBlue
     }
+
     
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
