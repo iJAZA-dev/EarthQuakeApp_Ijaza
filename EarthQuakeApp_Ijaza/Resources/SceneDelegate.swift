@@ -21,6 +21,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.makeKeyAndVisible()
     }
     
+    func createTabBar() -> UITabBarController {
+        let tabBar = UITabBarController()
+        UITabBar.appearance().tintColor = .systemBlue
+        tabBar.viewControllers = [createEarthQInfoNC(), createMapNC()]
+        
+        return tabBar
+    }
+    
     func createEarthQInfoNC() -> UINavigationController {
         let earthQuakeInfoVC = EarthQuakeInfoVC()
         earthQuakeInfoVC.title = "Earthquake Info"
@@ -40,13 +48,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         return UINavigationController(rootViewController: mapVC)
     }
     
-    func createTabBar() -> UITabBarController {
-        let tabBar = UITabBarController()
-        UITabBar.appearance().tintColor = .systemBlue
-        tabBar.viewControllers = [createEarthQInfoNC(), createMapNC()]
-        
-        return tabBar
-    }
     
     func configureNavigationBar() {
         UINavigationBar.appearance().tintColor = .systemBlue
